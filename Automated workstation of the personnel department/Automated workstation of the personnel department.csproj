@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5E2AB502-D662-4E65-A4B6-B80BF8D4BFCE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Automated_workstation_of_the_personnel_department</RootNamespace>
+    <AssemblyName>Automated workstation of the personnel department</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_frm.Designer.cs">
+      <DependentUpon>Admin_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Автоматизированная информационная система для специалиста отдела кадров АО «Тандер».cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Автоматизированная информационная система для специалиста отдела кадров АО «Тандер».Designer.cs">
+      <DependentUpon>Автоматизированная информационная система для специалиста отдела кадров АО «Тандер».cs</DependentUpon>
+    </Compile>
+    <Compile Include="Доб.Отдел.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Доб.Отдел.Designer.cs">
+      <DependentUpon>Доб.Отдел.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Доб.Сотрудник.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Доб.Сотрудник.Designer.cs">
+      <DependentUpon>Доб.Сотрудник.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Доб.Больничные.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Доб.Больничные.Designer.cs">
+      <DependentUpon>Доб.Больничные.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Доб.Отпуск.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Доб.Отпуск.Designer.cs">
+      <DependentUpon>Доб.Отпуск.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Доб.Поощрения.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Доб.Поощрения.Designer.cs">
+      <DependentUpon>Доб.Поощрения.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Доб.Повышение квалификации.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Доб.Повышение квалификации.Designer.cs">
+      <DependentUpon>Доб.Повышение квалификации.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Доб.Приём на работу и увольнение.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Доб.Приём на работу и увольнение.Designer.cs">
+      <DependentUpon>Доб.Приём на работу и увольнение.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Отдел.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Отдел.Designer.cs">
+      <DependentUpon>Отдел.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Сотрудник.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Сотрудник.Designer.cs">
+      <DependentUpon>Сотрудник.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Больничные.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Больничные.Designer.cs">
+      <DependentUpon>Больничные.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Отпуск.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Отпуск.Designer.cs">
+      <DependentUpon>Отпуск.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Поощрения.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Поощрения.Designer.cs">
+      <DependentUpon>Поощрения.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Повышение квалификации.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Повышение квалификации.Designer.cs">
+      <DependentUpon>Повышение квалификации.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Приём на работу и увольнение.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Приём на работу и увольнение.Designer.cs">
+      <DependentUpon>Приём на работу и увольнение.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Форма авторизации для пользователя.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Форма авторизации для пользователя.Designer.cs">
+      <DependentUpon>Форма авторизации для пользователя.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hrDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hrDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Root_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Root_frm.Designer.cs">
+      <DependentUpon>Root_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SecurityDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="System\ComponentMoodel.cs" />
+    <Compile Include="UpdatePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePass.Designer.cs">
+      <DependentUpon>UpdatePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Users.dbml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_frm.resx">
+      <DependentUpon>Admin_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Автоматизированная информационная система для специалиста отдела кадров АО «Тандер».resx">
+      <DependentUpon>Автоматизированная информационная система для специалиста отдела кадров АО «Тандер».cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Доб.Отдел.resx">
+      <DependentUpon>Доб.Отдел.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Доб.Сотрудник.resx">
+      <DependentUpon>Доб.Сотрудник.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Доб.Больничные.resx">
+      <DependentUpon>Доб.Больничные.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Доб.Отпуск.resx">
+      <DependentUpon>Доб.Отпуск.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Доб.Поощрения.resx">
+      <DependentUpon>Доб.Поощрения.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Доб.Повышение квалификации.resx">
+      <DependentUpon>Доб.Повышение квалификации.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Доб.Приём на работу и увольнение.resx">
+      <DependentUpon>Доб.Приём на работу и увольнение.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Отдел.resx">
+      <DependentUpon>Отдел.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Сотрудник.resx">
+      <DependentUpon>Сотрудник.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Больничные.resx">
+      <DependentUpon>Больничные.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Отпуск.resx">
+      <DependentUpon>Отпуск.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Поощрения.resx">
+      <DependentUpon>Поощрения.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Повышение квалификации.resx">
+      <DependentUpon>Повышение квалификации.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Приём на работу и увольнение.resx">
+      <DependentUpon>Приём на работу и увольнение.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Форма авторизации для пользователя.resx">
+      <DependentUpon>Форма авторизации для пользователя.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Root_frm.resx">
+      <DependentUpon>Root_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePass.resx">
+      <DependentUpon>UpdatePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="hrDataSet.xsc">
+      <DependentUpon>hrDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="hrDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hrDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hrDataSet.xss">
+      <DependentUpon>hrDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SecurityDBDataSet.xsc">
+      <DependentUpon>SecurityDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SecurityDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SecurityDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SecurityDBDataSet.xss">
+      <DependentUpon>SecurityDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Users.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Users.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Users.dbml.layout">
+      <DependentUpon>Users.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
